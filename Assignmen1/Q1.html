@@ -1,0 +1,83 @@
+<!-- Create a Student Report Table:
+
+• Create a table displaying details such as Student Name, Roll No., Subject,
+Marks, and Grade.
+• The table should have a border and a header row.
+• Use alternate row colors for better readability.
+• Include a caption that says "Student Report."
+• Add a column for each subject (Math, Science, English). -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Report</title>
+    <style>
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption>Student Report</caption>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Roll No.</th>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Somnath Dey</td>
+                <td rowspan="3">23</td>
+                <td>Math</td>
+                <td>89</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>85</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>92</td>
+                <td>A+</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
