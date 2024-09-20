@@ -1,0 +1,83 @@
+<!-- // • Add a heading, "My Image Gallery," using the <h1> tag to introduce the
+// section.
+// • Insert three different images using the <img> tag. Each image should have an
+// appropriate alt attribute describing the image in case it fails to load.
+// • Make each image clickable, linking to a larger version of the image using the
+// <a> tag. The larger images should open in a new tab.
+// • Add a caption below each image. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        figcaption {
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Image Gallery</h1>
+
+    <figure class="gallery">
+        <a href="https://unsplash.com/photos/abcd123" target="_blank">
+            <img src="https://placehold.co/600x400" alt="Beautiful Nature">
+        </a>
+        <figcaption>Beautiful Nature</figcaption>
+    </figure>
+
+    <figure class="gallery">
+        <a href="https://unsplash.com/photos/efgh456" target="_blank">
+            <img src="https://placehold.co/600x400" alt="Cityscape at Night">
+        </a>
+        <figcaption>Cityscape at Night</figcaption>
+    </figure>
+
+    <figure class="gallery">
+        <a href="https://unsplash.com/photos/ijkl789" target="_blank">
+            <img src="https://placehold.co/600x400" alt="Calm Ocean">
+        </a>
+        <figcaption>Calm Ocean</figcaption>
+    </figure>
+
+</body>
+
+</html>
