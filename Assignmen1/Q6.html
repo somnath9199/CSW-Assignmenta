@@ -1,0 +1,85 @@
+<!-- Create an HTML Page for a Shopping List:
+
+• Create an unordered list (<ul>) to display general items you need to buy for the
+week, such as groceries, toiletries, etc., with each item as a list item (<li>).
+o For each item, include a description using a description list (<dl>),
+where you define the product or provide additional details.
+
+• Create an ordered list (<ol>) to display the top-priority items to purchase first.
+• Insert a line break (<br>) after each section of the list to clearly separate them. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        dl {
+            margin-bottom: 10px;
+        }
+
+        dt {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>General Items to Buy This Week</h2>
+    <ul>
+        <li>
+            Groceries
+            <dl>
+                <dt>Vegetables</dt>
+                <dd>Tomatoes, Onions, Potatoes</dd>
+
+                <dt>Fruits</dt>
+                <dd>Apples, Bananas, Oranges</dd>
+            </dl>
+        </li>
+        <li>
+            Toiletries
+            <dl>
+                <dt>Shampoo</dt>
+                <dd>Herbal shampoo for dry hair</dd>
+
+                <dt>Toothpaste</dt>
+                <dd>Whitening toothpaste</dd>
+            </dl>
+        </li>
+        <li>
+            Cleaning Supplies
+            <dl>
+                <dt>Dish Soap</dt>
+                <dd>Lemon-scented dishwashing liquid</dd>
+
+                <dt>All-purpose Cleaner</dt>
+                <dd>Antibacterial surface cleaner</dd>
+            </dl>
+        </li>
+    </ul>
+
+    <br>
+
+    <h2>Top Priority Items to Purchase First</h2>
+    <ol>
+        <li>Toothpaste</li>
+        <li>Vegetables (Tomatoes, Onions, Potatoes)</li>
+        <li>Shampoo</li>
+    </ol>
+
+</body>
+
+</html>

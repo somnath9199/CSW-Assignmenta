@@ -1,0 +1,103 @@
+<!-- Create a Webpage with a Photo Showcase:
+
+• Display three photos in a row (you can use a table for the layout).
+• Each photo should have a caption below it.
+• Include a blockquote with a famous quote for each photo, and make sure the
+author’s name is semantically emphasized using appropriate HTML tags (e.g.,
+<strong> or <em>).
+• Ensure that the quotes are properly formatted to visually resemble quotes,
+rather than just plain text. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Showcase</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        figcaption {
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        blockquote {
+            margin: 10px auto;
+            width: 80%;
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #ccc;
+            padding-left: 10px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Photo Showcase</h1>
+
+    <div class="container">
+        <figure>
+            <img src="https://placehold.co/600x400" alt="Elon Musk">
+            <figcaption>Elon Musk</figcaption>
+        </figure>
+        <blockquote>
+            "When something is important enough, you do it even if the odds are not in your favor." 
+            <br>
+            <strong>– Elon Musk</strong>
+        </blockquote>
+    </div>
+
+    <div class="container">
+        <figure>
+            <img src="https://placehold.co/600x400" alt="APJ Abdul Kalam">
+            <figcaption>APJ Abdul Kalam</figcaption>
+        </figure>
+        <blockquote>
+            "Dream, dream, dream. Dreams transform into thoughts and thoughts result in action."
+            <br>
+            <strong>– APJ Abdul Kalam</strong>
+        </blockquote>
+    </div>
+
+    <div class="container">
+        <figure>
+            <img src="https://placehold.co/600x400" alt="Bill Gates">
+            <figcaption>Bill Gates</figcaption>
+        </figure>
+        <blockquote>
+            "Don't compare yourself with anyone in this world. If you do so, you are insulting yourself."
+            <br>
+            <strong>– Bill Gates</strong>
+        </blockquote>
+    </div>
+
+</body>
+
+</html>
