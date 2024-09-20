@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Special Attributes</title>
+</head>
+<body>
+
+    <!-- Paragraphs with tabindex in custom order -->
+    <p tabindex="2">First paragraph with tabindex set to 2. Press "Tab" to navigate.</p>
+    <p tabindex="1">Second paragraph with tabindex set to 1. This will be focused first.</p>
+    <p tabindex="3">Third paragraph with tabindex set to 3.</p>
+    <p tabindex="5">Fourth paragraph with tabindex set to 5. This comes last.</p>
+    <p tabindex="4" contenteditable="true" draggable="true">
+        Fifth paragraph with tabindex set to 4. This is <strong>editable</strong> and <strong>draggable</strong>. You can edit this text and drag the paragraph!
+    </p>
+
+    <!-- Hyperlink with accesskey set to 'h' -->
+    <p>Click the following link to visit a website, or press <strong>Alt + H</strong> (Windows) or <strong>Control + Option + H</strong> (Mac):</p>
+    <a href="https://www.example.com" target="_blank" accesskey="h">Go to Example Website</a>
+
+</body>
+</html>
